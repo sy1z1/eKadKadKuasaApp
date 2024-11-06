@@ -1,3 +1,3 @@
 // api_constants.dart
-const String baseApiUrl = "http://192.168.68.103:8000/api";
-const String baseDNS = "192.168.68.103:8000";
+const String baseApiUrl = "http://ekadkuasa.atom.gov.my:8000//api";
+const String baseDNS = "ekadkuasa.atom.gov.my:8000";

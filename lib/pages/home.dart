@@ -350,24 +350,23 @@ class _HomeState extends State<Home> {
 
       if (response.statusCode == 200) {
         final jsonData = jsonDecode(response.body);
-        box.put('historyData', jsonData); // Cache the history data locally
-        return jsonData; // Return the data fetched from the API
+
+        // Cache the history data, including dates and counts if available
+        box.put('historyData', jsonData);
+        return jsonData;
       } else {
-        // Handle error, return an empty map or throw an exception
-        return {}; // Return an empty map to indicate failure
+        return {};
       }
     } else {
-      // Fetch cached history data if offline
       final cachedData = box.get('historyData');
-
-      // Ensure we handle type casting correctly
       if (cachedData is Map) {
-        return Map<String, dynamic>.from(cachedData); // Safely convert to Map<String, dynamic>
+        return Map<String, dynamic>.from(cachedData);
       } else {
-        return {}; // Return an empty map if none
+        return {};
       }
     }
   }
+
   //-----------------------------------end of cache data code-------------------------------------
 
 
