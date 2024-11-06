@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "36117616148",
+    "project_id": "ekadkuasav3",
+    "storage_bucket": "ekadkuasav3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36117616148:android:f29255bfd8dccd89b9b901",
+        "android_client_info": {
+          "package_name": "com.example.app_kadkuasa"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg6olEo0aU4J_DQrTPydvmZrbecHS8RPw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
